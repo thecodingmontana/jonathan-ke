@@ -10,6 +10,8 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'shadcn-nuxt',
     'motion-v/nuxt',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
   ],
   shadcn: {
     /**
@@ -42,5 +44,15 @@ export default defineNuxtConfig({
   },
   future: {
     compatibilityVersion: 4,
-  }
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
+  piniaPluginPersistedstate: {
+    storage: 'cookies',
+    cookieOptions: {
+      sameSite: 'lax',
+    },
+    debug: true,
+  },
 })
