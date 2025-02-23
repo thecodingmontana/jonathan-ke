@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import FullView from "~/modals/FullView.vue";
+import FullView from './FullView.vue';
 </script>
 
 <template>
   <div>
-    <FullView />
+    <!-- <FullView /> -->
   </div>
 </template>

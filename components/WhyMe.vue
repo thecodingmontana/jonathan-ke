@@ -38,8 +38,8 @@ const handleHoverEnd = () => {
 </script>
 
 <template>
-  <div class="min-h-screen sm:mt-0 sm:py-20 px-4">
-    <div class="max-w-[92rem] mx-auto">
+  <div class="min-h-screen max-w-7xl mx-auto sm:mt-0 sm:py-20 px-4">
+    <div class="max-w-7xl mx-auto">
       <Motion
         as="p"
         :initial="{ opacity: 0, y: 20 }"

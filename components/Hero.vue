@@ -33,7 +33,7 @@ const avatars = ref([
 </script>
 
 <template>
-  <section class="relative px-4 pt-5 pb-10 text-center">
+  <section class="relative max-w-7xl mx-auto px-4 pt-5 pb-10 text-center">
     <div class="relative">
       <Motion
         as="p"
