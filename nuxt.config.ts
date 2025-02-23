@@ -55,4 +55,9 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui',
   },
+  vite: {
+    server: {
+      allowedHosts: ['db60-102-220-169-7.ngrok-free.app']
+    }
+  }
 })

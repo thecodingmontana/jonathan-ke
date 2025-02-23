@@ -35,7 +35,7 @@ const isOpenMenu = ref(false)
           width: isOpenMenu ? 'calc(100% - 32px)' : '40px',
           height: isOpenMenu ? 'calc(80vh - 32px)' : '40px',
         }"
-        class-name="fixed z-20 rounded-xl bg-gradient-to-br from-violet-600 to-violet-500 shadow-lg shadow-violet-800/20"
+        class="fixed z-20 rounded-xl bg-gradient-to-br from-violet-600 to-violet-500 shadow-lg shadow-violet-800/20"
         :style="{
           top: '16px',
           right: '16px',

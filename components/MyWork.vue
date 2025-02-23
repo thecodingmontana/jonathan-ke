@@ -38,7 +38,7 @@ const handleHoverEnd = () => {
 </script>
 
 <template>
-  <div class="min-h-screen -mt-16 sm:mt-0 sm:py-16 px-4">
+  <div class="sm:py-16 px-4">
     <div class="max-w-7xl mx-auto">
       <Motion
         as="p"
