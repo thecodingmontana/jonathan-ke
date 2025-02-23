@@ -32,5 +32,6 @@ defineOgImageComponent('Nuxt', {
   <main class="min-h-screen overflow-hidden bg-[#faf7f2] dark:bg-background xl:overflow-visible">
     <AppHeader />
     <slot />
+    <AppFooter />
   </main>
 </template>

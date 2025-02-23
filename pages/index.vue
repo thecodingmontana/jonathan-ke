@@ -5,5 +5,6 @@
       <WhyMe />
     </div>
     <ImageCarousel />
+    <MyWork />
   </div>
 </template>

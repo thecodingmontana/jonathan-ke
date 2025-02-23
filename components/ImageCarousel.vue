@@ -95,6 +95,5 @@ const prevCard = () => {
         <SmallImageCarousel :images="randomImagesSet2" />
       </div>
     </div>
-    <AppFooter />
   </section>
 </template>
