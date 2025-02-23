@@ -1,34 +1,34 @@
 <script setup lang="ts">
-import { Motion } from "motion-v";
-import { Button } from "~/components/ui/button";
-import { cn } from "~/lib/utils";
+import { Motion } from 'motion-v'
+import { Button } from '~/components/ui/button'
+import { cn } from '~/lib/utils'
 
 const avatars = ref([
   {
     delay: 0.2,
     img:
-      "https://plus.unsplash.com/premium_photo-1691411181835-f4f08c97e0a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWZyaWNhbnxlbnwwfHwwfHx8MA%3D%3D",
-    class: "-top-[5%] -left-[1%] sm:top-[20%] sm:left-[5%]",
+      'https://plus.unsplash.com/premium_photo-1691411181835-f4f08c97e0a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWZyaWNhbnxlbnwwfHwwfHx8MA%3D%3D',
+    class: '-top-[5%] -left-[1%] sm:top-[20%] sm:left-[5%]',
   },
   {
     delay: 0.3,
     img:
-      "https://images.unsplash.com/photo-1487546331507-fcf8a5d27ab3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFmcmljYW58ZW58MHx8MHx8fDA%3D",
-    class: "top-[45%] left-[10%] sm:left-[20%]",
+      'https://images.unsplash.com/photo-1487546331507-fcf8a5d27ab3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFmcmljYW58ZW58MHx8MHx8fDA%3D',
+    class: 'top-[45%] left-[10%] sm:left-[20%]',
   },
   {
     delay: 0.4,
     img:
-      "https://images.unsplash.com/photo-1616076875330-72c90779688e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    class: "top-[20%] left-[85%]",
+      'https://images.unsplash.com/photo-1616076875330-72c90779688e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    class: 'top-[20%] left-[85%]',
   },
   {
     delay: 0.5,
     img:
-      "https://images.unsplash.com/photo-1608009232260-9b527a5bb9bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWZyaWNhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D",
-    class: "top-[45%] left-[72%]",
+      'https://images.unsplash.com/photo-1608009232260-9b527a5bb9bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWZyaWNhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
+    class: 'top-[45%] left-[72%]',
   },
-]);
+])
 </script>
 
 <template>
@@ -60,7 +60,7 @@ const avatars = ref([
         class="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto"
       >
         Because the best moments deserve to be remembered.
-        <br >
+        <br>
         Let your memories shine through in every shot.
       </Motion>
       <Motion
@@ -70,7 +70,9 @@ const avatars = ref([
         :transition="{ duration: 0.6, delay: 0.6, type: 'spring', stiffness: 400 }"
         :hover="{ transform: 'translateY(-10px) translateY(0px)' }"
       >
-        <Button size="lg"> Book photoshoot now </Button>
+        <Button size="lg">
+          Book photoshoot now
+        </Button>
       </Motion>
       <Motion
         v-for="(avatar, index) in avatars"

@@ -3,6 +3,6 @@ export interface Image {
   content: string
 }
 
-export const githubUrl =
-  "https://github.com/thecodingmontana/jonathan-ke";
-export const twitterUrl = "https://x.com/codewithmontana";
+export const githubUrl
+  = 'https://github.com/thecodingmontana/jonathan-ke'
+export const twitterUrl = 'https://x.com/codewithmontana'

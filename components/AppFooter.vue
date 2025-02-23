@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { CodeIcon } from "lucide-vue-next";
-import { githubUrl, twitterUrl } from "~/types";
+import { CodeIcon } from 'lucide-vue-next'
+import { githubUrl, twitterUrl } from '~/types'
 </script>
 
 <template>

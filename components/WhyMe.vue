@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Motion } from "motion-v";
+import { Motion } from 'motion-v'
 </script>
 
 <template>
@@ -11,8 +11,9 @@ import { Motion } from "motion-v";
         :animate="{ opacity: 1, y: 0 }"
         :transition="{ duration: 0.8 }"
         class="text-sm uppercase tracking-wider mb-4"
-        >Why Me</Motion
       >
+        Why Me
+      </Motion>
       <Motion
         as="h1"
         :initial="{ opacity: 0, y: 20 }"

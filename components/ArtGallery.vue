@@ -1,36 +1,36 @@
 <script setup lang="ts">
-import { Motion } from "motion-v";
+import { Motion } from 'motion-v'
 
 const artCards = ref([
   {
     image:
-      "https://images.unsplash.com/photo-1739889399685-c73e63753981?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
+      'https://images.unsplash.com/photo-1739889399685-c73e63753981?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8',
   },
   {
     image:
-      "https://images.unsplash.com/photo-1734639430017-5756ea7fec63?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8",
+      'https://images.unsplash.com/photo-1734639430017-5756ea7fec63?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8',
   },
   {
     image:
-      "https://images.unsplash.com/photo-1735348061620-81cf27a5b6ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D",
+      'https://images.unsplash.com/photo-1735348061620-81cf27a5b6ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D',
   },
   {
     image:
-      "https://plus.unsplash.com/premium_photo-1738935667717-75777a3aaf71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D",
+      'https://plus.unsplash.com/premium_photo-1738935667717-75777a3aaf71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     image:
-      "https://images.unsplash.com/photo-1739889399685-c73e63753981?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
+      'https://images.unsplash.com/photo-1739889399685-c73e63753981?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8',
   },
   {
     image:
-      "https://images.unsplash.com/photo-1734639430017-5756ea7fec63?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8",
+      'https://images.unsplash.com/photo-1734639430017-5756ea7fec63?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8',
   },
   {
     image:
-      "https://images.unsplash.com/photo-1735348061620-81cf27a5b6ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D",
+      'https://images.unsplash.com/photo-1735348061620-81cf27a5b6ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D',
   },
-]);
+])
 </script>
 
 <template>
@@ -72,7 +72,11 @@ const artCards = ref([
         },
       }"
     >
-      <NuxtImg :src="card.image" :alt="`Artwork ${index + 1}`" class="object-cover h-full w-full" />
+      <NuxtImg
+        :src="card.image"
+        :alt="`Artwork ${index + 1}`"
+        class="object-cover h-full w-full"
+      />
     </Motion>
   </div>
 </template>

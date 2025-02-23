@@ -1,20 +1,24 @@
 <script setup lang="ts">
-import { Moon, Sun } from "lucide-vue-next";
-import { Button } from "~/components/ui/button";
+import { Moon, Sun } from 'lucide-vue-next'
+import { Button } from '~/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "~/components/ui/dropdown-menu";
+} from '~/components/ui/dropdown-menu'
 
-const colorMode = useColorMode();
+const colorMode = useColorMode()
 </script>
 
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger>
-      <Button variant="ghost" size="icon" class="rounded-full">
+      <Button
+        variant="ghost"
+        size="icon"
+        class="rounded-full"
+      >
         <Sun
           class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
         />
