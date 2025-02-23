@@ -63,15 +63,16 @@ const handleHoverEnd = () => {
           as="div"
           class="carousel"
           :class="{ paused: isHovered }"
-          @mouseover="handleHoverStart"
-          @mouseleave="handleHoverEnd"
           :initial="{ opacity: 0, y: 20 }"
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 1, ease: 'easeOut' }"
+          @mouseover="handleHoverStart"
+          @mouseleave="handleHoverEnd"
         >
-          <Motion as="div"
-            v-for="(image, index) in [...images, ...images]"
+          <Motion
+v-for="(image, index) in [...images, ...images]"
             :key="index"
+            as="div"
             class="carousel-item"
           >
             <Motion

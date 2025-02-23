@@ -36,9 +36,9 @@ const artCards = ref([
 <template>
   <div class="relative h-[320px] mx-auto">
     <Motion
-      as="div"
       v-for="(card, index) in artCards"
       :key="index"
+      as="div"
       :class="`absolute cursor-pointer top-[20%] right-0 mx-auto left-0 w-[180px] h-[260px] rounded-[24px] shadow-lg overflow-hidden`"
       :style="{
         zIndex: artCards.length - index,

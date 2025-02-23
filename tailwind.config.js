@@ -1,5 +1,3 @@
-import { transform } from "motion-v"
-
 const animate = require("tailwindcss-animate")
 
 /** @type {import('tailwindcss').Config} */

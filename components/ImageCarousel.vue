@@ -6,7 +6,6 @@ import {
   Motion,
 } from "motion-v";
 import { useWindowSize } from "@vueuse/core";
-import { Button } from "./ui/button";
 
 const { width, height } = useWindowSize();
 
@@ -96,6 +95,6 @@ const prevCard = () => {
         <SmallImageCarousel :images="randomImagesSet2" />
       </div>
     </div>
-    <Footer />
+    <AppFooter />
   </section>
 </template>

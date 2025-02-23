@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ModalProvider from '~/providers/ModalProvider.vue';
-
 useHead({
   meta: [
     { property: 'og:title', content: `Jonathan KE` },
@@ -32,8 +30,7 @@ defineOgImageComponent('Nuxt', {
 
 <template>
   <main class="min-h-screen overflow-hidden bg-[#faf7f2] dark:bg-background xl:overflow-visible">
-    <Header />
+    <AppHeader />
     <slot />
-    <ModalProvider />
   </main>
 </template>

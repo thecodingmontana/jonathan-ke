@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, defineComponent } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import { Motion } from "motion-v";
 import { cn } from "~/lib/utils";
 

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Motion } from "motion-v";
-import { ChevronDown } from "lucide-vue-next";
 import { Button } from "~/components/ui/button";
 import { cn } from "~/lib/utils";
 
@@ -61,7 +60,7 @@ const avatars = ref([
         class="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto"
       >
         Because the best moments deserve to be remembered.
-        <br />
+        <br >
         Let your memories shine through in every shot.
       </Motion>
       <Motion
@@ -74,9 +73,9 @@ const avatars = ref([
         <Button size="lg"> Book photoshoot now </Button>
       </Motion>
       <Motion
-        as="div"
         v-for="(avatar, index) in avatars"
         :key="index"
+        as="div"
         :initial="{ opacity: 0, y: 20 }"
         :animate="{ opacity: 1, y: 0 }"
         :transition="{ delay: avatar.delay, duration: 0.5 }"
