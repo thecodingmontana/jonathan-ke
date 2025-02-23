@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "motion-v/nuxt",
     "@vueuse/nuxt",
     "nuxt-og-image",
+    "@nuxt/eslint",
   ],
   shadcn: {
     /**
@@ -49,4 +50,9 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL,
     name: process.env.NUXT_PUBLIC_SITE_NAME,
   },
+  eslint: {
+    config: {
+      stylistic: true
+    }
+  }
 });
