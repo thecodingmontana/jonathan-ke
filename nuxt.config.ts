@@ -32,6 +32,11 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   compatibilityDate: '2024-11-01',
+  vite: {
+    server: {
+      allowedHosts: ['db60-102-220-169-7.ngrok-free.app'],
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
@@ -55,9 +60,4 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui',
   },
-  vite: {
-    server: {
-      allowedHosts: ['db60-102-220-169-7.ngrok-free.app']
-    }
-  }
 })
